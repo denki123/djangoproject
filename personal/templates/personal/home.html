@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TOKO KOMPUTER</title>
+    <!-- IMPORT FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/linearis.css' %}" />
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="container">
+          <div class="title">
+            <h1>TOKO KOMPUTER</h1>
+          </div>
+          <p class="description">
+          MENAMPILKAN INFORMASI TENTANG LAPTOP DAN PC KESAYANGAN ANDA</p>
+            <div class="col-md-12 text-center">
+              <a href="{% url 'asus'%}" class="btn custom-btn-header">ASUS</a>
+              <a href="{% url 'acer'%}" class="btn custom-btn-header">ACER</a>
+              <a href="{% url 'lenovo'%}" class="btn custom-btn-header">LENOVO</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START FOOTER -->
+<footer class="footer-wrapper">
+  <div class="footer-top">
+    <div class="container">
+        <div class="col-md-2 col-footer">
+          <h3>MENU</h3>
+          <nav class="nav flex-column">
+            <a class="nav-link" href="#">ABOUT</a>
+            <a class="nav-link" href="https://www.linkedin.com/in/denki-kelompok-2-045816156/?trk=onboarding-landing&dl=no">LinkIn</a>
+            <a class="nav-link" href="https://github.com/denki123/djangoproject">Github</a>
+            <a class="nav-link" href="#">Disabled</a>
+          </nav>
+        </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <span class="copyright">&copy; Copyright <a href="#">DENKI</a> 2017 </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  </body>
+</html>
